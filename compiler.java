@@ -120,7 +120,7 @@ public class compiler {
 		System.exit(0);
 	}
 
-	private static int g(char a) {//栈外优先函数
+	private static int g(char a) {
 		switch(a)
 		{
 		case '+':return 1;
@@ -135,7 +135,7 @@ public class compiler {
 		return 0;
 	}
 
-	private static int f(Character p) {//栈内优先函数
+	private static int f(Character p) {
 		switch(p)
 		{
 		case '+':return 2;
