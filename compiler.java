@@ -1,4 +1,7 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class compiler {
@@ -8,9 +11,10 @@ public class compiler {
 		System.out.println("I"+c);
 	}
 
-	public static void main(String[] args) {//·½½à
-		Scanner sc=new Scanner(System.in);
-		String string=sc.nextLine();
+	public static void main(String[] args) throws IOException {
+		FileInputStream fis=new FileInputStream(args[0]);
+		BufferedReader br=new BufferedReader(new InputStreamReader(fis));
+		String string=br.readLine();
 		char[] input=string.toCharArray();
 		int len=input.length;
 		stack.push('\0');
