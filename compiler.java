@@ -34,6 +34,7 @@ public class compiler {
 		}
 		while(stack.peek()!='\n'||stack_peek()!='\0')
 		{
+			examine(stack_peek(),'\0');
 			stack_reduction();
 		}
 	}
