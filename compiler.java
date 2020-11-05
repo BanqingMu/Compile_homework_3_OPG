@@ -8,7 +8,7 @@ public class compiler {
 		System.out.println("I"+c);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {//·½½à
 		Scanner sc=new Scanner(System.in);
 		String string=sc.nextLine();
 		char[] input=string.toCharArray();
