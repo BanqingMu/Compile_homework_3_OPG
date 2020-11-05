@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class compiler {
@@ -13,10 +12,9 @@ public class compiler {
 	}
 
 	public static void main(String[] args) throws IOException {
-//		FileInputStream fis=new FileInputStream(args[0]);
-//		BufferedReader br=new BufferedReader(new InputStreamReader(fis));
-//		String string=br.readLine();
-		String string=new Scanner(System.in).nextLine();
+		FileInputStream fis=new FileInputStream(args[0]);
+		BufferedReader br=new BufferedReader(new InputStreamReader(fis));
+		String string=br.readLine();
 		char[] input=string.toCharArray();
 		int len=input.length;
 		stack.push('\0');
